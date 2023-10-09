@@ -17,8 +17,13 @@
 package com.example.dessertclicker.model
 
 import androidx.annotation.DrawableRes
+import com.example.dessertclicker.R
 
 /**
  * [Dessert] is the data class to represent the Dessert imageId, price, and startProductionAmount
  */
-data class Dessert(@DrawableRes val imageId: Int, val price: Int, val startProductionAmount: Int)
+data class Dessert(
+    @DrawableRes val imageId: Int = R.drawable.cupcake,
+    val price: Int = 5,
+    val startProductionAmount: Int = 0
+)
